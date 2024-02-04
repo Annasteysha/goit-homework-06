@@ -253,7 +253,7 @@ color: #434455;
     margin-top: 96px;
 }
 .section-three-link{
-/* display: flex; */
+display: flex;
 gap: 24px;
 margin: 0;
     padding: 0;
