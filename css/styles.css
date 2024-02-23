@@ -64,15 +64,12 @@ color: #2e2f42;
     letter-spacing: 0.02em;
     padding-top: 24px;
     padding-bottom: 24px;
-}
-
-.info-style {
     position: relative;
-    color: #404bbf;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.info-style::after {
+
+.info::after {
     position: absolute;
     left: 0;
     bottom: -1px;
@@ -85,8 +82,8 @@ color: #2e2f42;
 }
 
 .info:hover,
-.info-style:focus,
-.info-style:active {
+.info:focus,
+.info:active {
     color: #404BBF;
 }
 
@@ -121,6 +118,11 @@ color: #2e2f42;
 .address-style:focus {
     color: #404bbf;
 }
+.menu-open-btn {
+    border: none;
+    background-color: transparent;
+  margin: 16px;
+}
 /****************MOB MENU************/
 .mob-menu {
     position: fixed;
@@ -130,12 +132,14 @@ width: 100%;
 height: 100vh;
 display: flex;
 flex-direction: column;
-justify-content: space-between;
-padding-left: 16px;
-padding-top: 72px;
+padding-bottom: 24px;
+padding: 72px 0 24px 16px;
+overflow: auto;
+opacity: 0;
+visibility: hidden;
+pointer-events: none;
 }
 .menu-close-btn {
-    
 position: absolute;
 padding: 0;
 bottom: 24px;
@@ -912,6 +916,27 @@ cursor: pointer;
         
     }
     /* ---------------------------------- */
+    .header-container {
+        width: 768px;
+        height: 72px;
+    }
+    .info-list {
+        display: flex;
+    }
+    .address-link-list {
+        display:block;
+        width: auto;
+    }
+    .address-style {
+        display: flex;
+        line-height: 1.1;
+        font-weight: 400;
+        font-size: 12px;
+        letter-spacing: 0.04em;
+    }
+    .menu-open-btn, .mob-menu {
+        display: none;
+    }
     .section-one {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-tab.jpg);
     }
@@ -974,6 +999,23 @@ width: 496px;
 
 @media screen and (min-width: 1158px) {
      /* ------------------------------- */
+     .header-container {
+        display: flex;
+        width: 1440px;
+    }
+ 
+    .address-link-list {
+       display: flex;
+    }
+    .address-style {
+        line-height: 1.5;
+        font-weight: 500;
+        font-size: 16px;
+        letter-spacing: 0.02em;
+    }
+    .menu-open-btn, .mob-menu {
+        display: none;
+    }
      .section-one {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
     }
