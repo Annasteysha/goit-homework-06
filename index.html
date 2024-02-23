@@ -47,6 +47,76 @@
           </li>
         </ul>
       </address>
+      <button class="menu-open-btn" type="button"></button>
+      </div>
+      <!------mob-menu-->
+      <div class="mob-menu">
+        <button type="button" class="menu-close-btn">
+          <svg class="close-btn-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
+          </svg>
+        </button>
+
+        <nav>
+        <ul class="mob-menu-list">
+          <li class="mob-info-list">
+            <a class="mob-info mob-info-style" href="./index.html">Studio</a>
+          </li>
+          <li class="mob-info-list">
+            <a class="mob-info" href="">Portfolio</a>
+          </li>
+          <li class="mob-info-list">
+            <a class="mob-info" href="">Contacts</a>
+          </li>
+        </ul>
+
+        
+      <address>
+        <ul class="address-mob-list">
+          <li class="address-mob">
+            <a class="address-style-mob" href="mailto:info@devstudio.com">info@devstudio.com</a>
+          </li>
+          <li class="address-mob">
+            <a class="address-style-mob" href="tel:+110001111111">+11 (000) 111-11-11</a>
+          </li>
+        </ul>
+      </address>
+
+
+        <ul class="mob-icon-ul">
+          <li class="mob-icon-li">
+            <a class="mob-icon-a" href="">
+              <svg  class="mob-icon-svg"  id="icon-instagram-2" width="16" height="16">
+                <use href="./images/icons.svg#icon-instagram-2"></use>
+              </svg>
+              </a>
+          </li>
+         <li class="mob-icon-li">
+          <a class="mob-icon-a" href="">
+            <svg  class="mob-icon-svg"  id="icon-twitter-1" width="16" height="16">
+                <use href="./images/icons.svg#icon-twitter-1"></use>
+              </svg>
+              </a>
+         </li>
+          <li class="mob-icon-li">
+             <a class="mob-icon-a" href="">
+              <svg  class="mob-icon-svg"  id="icon-facebook-1" width="16" height="16">
+                <use  href="./images/icons.svg#icon-facebook-1"></use>
+              </svg>
+              </a>
+          </li>
+           <li class="mob-icon-li">
+            <a class="mob-icon-a" href="">
+              <svg  class="mob-icon-svg" id="icon-linkedin-1" width="16" height="16">
+                <use href="./images/icons.svg#icon-linkedin-1"></use>
+              </svg>
+              </a>
+           </li>
+        </ul>
+
+
+
+      </nav>
       </div>
     </header>
     
@@ -127,6 +197,7 @@
           
           <li class="fon-section-three">
             <img class="foto"
+            srcset="./images/img1.jpg 1x, ./images/img1-2x.jpg 2x"
               src="./images/img1.jpg"
               alt="foto Mark Guerrero"
               width="264"
@@ -174,6 +245,7 @@
           <li class="fon-section-three">
             
             <img class="foto"
+            srcset="./images/img2.jpg 1x, ./images/img2-2x.jpg 2x"
               src="./images/img2.jpg"
               alt="foto Tom Ford"
               width="264"
@@ -221,6 +293,7 @@
           
           <li class="fon-section-three">
             <img class="foto"
+            srcset="./images/img3.jpg 1x, ./images/img3-2x.jpg 2x"
               src="./images/img3.jpg"
               alt="foto Camila Garcia"
               width="264"
@@ -268,6 +341,7 @@
           
           <li class="fon-section-three">
             <img class="foto"
+            srcset="./images/img4.jpg 1x, ./images/img4-2x.jpg 2x"
               src="./images/img4.jpg"
               alt="foto Daniel Wilson"
               width="264"
@@ -326,10 +400,15 @@
         
         <li class="fon-section-four">
           <div class="section-four-div">
-          <img class="foto" src="./images/img11.jpg" 
-          alt="foto Banking App" 
-          width="360" 
-          height="300"/>
+            <picture>
+              <source srcset="./images/img11.jpg 1x, ./images/img11-2x.jpg 2x" media="(min-width: 1158px)" />
+              <source srcset="./images/img11-tab.jpg 1x, ./images/img11-tab2x.jpg 2x" media="(min-width: 768px)" />
+              <source srcset="./images/img11-mob.jpg 1x, ./images/img11-mob2x.jpg 2x" media="(max-width: 767px)" />
+              <img class="foto" src="./images/img11.jpg" 
+              alt="foto Banking App" 
+              width="360" 
+              height="300"/>
+            </picture>
           <p class="section-four-p">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
           </div>
           <div class="section-four-div-two">
@@ -340,10 +419,15 @@
         
         <li class="fon-section-four">
           <div class="section-four-div">
+            <picture>
+              <source srcset="./images/img22.jpg 1x, ./images/img22-2x.jpg 2x" media="(min-width: 1158px)" />
+              <source srcset="./images/img22-tab.jpg 1x, ./images/img22-tab2x.jpg 2x" media="(min-width: 768px)" />
+              <source srcset="./images/img22-mob.jpg 1x, ./images/img22-mob2x.jpg 2x" media="(max-width: 767px)" />
           <img class="foto" src="./images/img22.jpg" 
           alt="foto Cashless Paymen" 
           width="360" 
           height="300"/>
+          </picture>
           <p class="section-four-p">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
           </div>
           <div class="section-four-div-two">
@@ -353,10 +437,15 @@
         </li>
         <li class="fon-section-four">
           <div class="section-four-div">
+            <picture>
+              <source srcset="./images/img33.jpg 1x, ./images/img33-2x.jpg 2x" media="(min-width: 1158px)" />
+              <source srcset="./images/img33-tab.jpg 1x, ./images/img33-tab2x.jpg 2x" media="(min-width: 768px)" />
+              <source srcset="./images/img33-mob.jpg 1x, ./images/img33-mob2x.jpg 2x" media="(max-width: 767px)" />
           <img class="foto" src="./images/img33.jpg" 
           alt="foto Meditation App" 
           width="360" 
           height="300"/>
+          </picture>
           <p class="section-four-p">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
           </div>
           <div class="section-four-div-two">
@@ -366,9 +455,14 @@
         </li>
         <li class="fon-section-four">
           <div class="section-four-div">
+            <picture>
+              <source srcset="./images/img44.jpg 1x, ./images/img44-2x.jpg 2x" media="(min-width: 1158px)" />
+              <source srcset="./images/img44-tab.jpg 1x, ./images/img44-tab2x.jpg 2x" media="(min-width: 768px)" />
+              <source srcset="./images/img44-mob.jpg 1x, ./images/img44-mob2x.jpg 2x" media="(max-width: 767px)" />
           <img class="foto" src="./images/img44.jpg" 
           alt="foto Taxi Service" 
           width="360" height="300"/>
+          </picture>
           <p class="section-four-p">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
           </div>
           <div class="section-four-div-two">
@@ -378,9 +472,14 @@
         </li>
         <li class="fon-section-four">
           <div class="section-four-div">
+            <picture>
+              <source srcset="./images/img55.jpg 1x, ./images/img55-2x.jpg 2x" media="(min-width: 1158px)" />
+              <source srcset="./images/img55-tab.jpg 1x, ./images/img55-tab2x.jpg 2x" media="(min-width: 768px)" />
+              <source srcset="./images/img55-mob.jpg 1x, ./images/img55-mob2x.jpg 2x" media="(max-width: 767px)" />
           <img class="foto" src="./images/img55.jpg" 
           alt="foto Screen Illustrations" 
           width="360" height="300"/>
+          </picture>
           <p class="section-four-p">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
           </div>
           <div class="section-four-div-two">
@@ -390,9 +489,14 @@
         </li>
         <li class="fon-section-four">
            <div class="section-four-div">
+            <picture>
+              <source srcset="./images/img66.jpg 1x, ./images/img66-2x.jpg 2x" media="(min-width: 1158px)" />
+              <source srcset="./images/img66-tab.jpg 1x, ./images/img66-tab2x.jpg 2x" media="(min-width: 768px)" />
+              <source srcset="./images/img66-mob.jpg 1x, ./images/img66-mob2x.jpg 2x" media="(max-width: 767px)" />
           <img class="foto" src="./images/img66.jpg" 
           alt="foto Online Courses" 
           width="360" height="300"/>
+          </picture>
           <p class="section-four-p">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
           </div>
           <div class="section-four-div-two">
